@@ -1,0 +1,125 @@
+.projectsSection {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  /* Fixed: Lighter text for dark background */
+  color: #ffffff;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.projectCard {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.projectHeader {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: var(--white);
+  padding: 2rem;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projectHeader h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  min-height: 36px;
+  align-items: flex-start;
+}
+
+.projectTag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.projectBody {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectBody p {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  flex: 1;
+}
+
+.projectMetrics {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.metric {
+  flex: 1;
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.metricValue {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  display: block;
+}
+
+.metricLabel {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projectHeader {
+    height: auto;
+    min-height: 160px;
+  }
+}
