@@ -3,9 +3,9 @@ import { Project } from '@/types/index';
 export const projects: Project[] = [
   {
     id: 'mimic-qa',
-    title: 'NAMCS Clinical Q&A System',
+    title: 'MIMIC-IV Clinical Q&A System',
     tags: ['Healthcare AI', 'LLM', 'FastAPI'],
-    description: 'Built a natural language question-answering system over the NAMCS clinical database using FastAPI, PostgreSQL, and large language models. Enables clinicians to query complex medical data using plain English.',
+    description: 'Built a natural language question-answering system over the MIMIC-IV clinical database using FastAPI, PostgreSQL, and large language models. Enables clinicians to query complex medical data using plain English.',
     metrics: [
       { value: '70%', label: 'Faster Queries' },
       { value: '$2M', label: 'Annual Savings' }

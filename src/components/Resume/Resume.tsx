@@ -16,7 +16,7 @@ const Resume = () => {
       <section className={styles.section}>
         <h2><Briefcase size={24} className={styles.sectionIcon} /> Professional Summary</h2>
         <p>
-          Data and AI Technology Leader with 20+ years of experience architecting multi-agent AI systems,
+          Data and AI Technology Leader with 22+years of experience architecting multi-agent AI systems,
           enterprise-grade data pipelines, and production-scale ML solutions. Proven track record of scaling
           AI/ML teams from 5 to 25 members and delivering measurable ROI across healthcare, government, and
           enterprise sectors.
@@ -147,6 +147,13 @@ const Resume = () => {
             <div>
               <strong>Azure Data Scientist Associate</strong>
               <span>Issued Mar 2022</span>
+            </div>
+          </div>
+          <div className={styles.cert}>
+            <Award size={18} className={styles.certIcon} />
+            <div>
+              <strong>Microsoft Certified Professional - Silverlight Developer</strong>
+              <span>Issued Mar 2011</span>
             </div>
           </div>
         </div>

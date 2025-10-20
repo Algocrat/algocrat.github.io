@@ -15,8 +15,6 @@ interface TabsProps {
 const Tabs = ({ items, defaultTab }: TabsProps) => {
   const [activeTab, setActiveTab] = useState(defaultTab || items[0]?.id);
 
-  const activeContent = items.find(item => item.id === activeTab)?.content;
-
   const handleTabClick = (tabId: string) => {
     setActiveTab(tabId);
   };

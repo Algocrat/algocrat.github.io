@@ -6,7 +6,7 @@ const Hero = () => {
       <h1 className={styles.title}>Tejas Patel</h1>
       <div className={styles.position}>Data & AI Technology Leader</div>
       <p className={styles.subtitle}>
-        20+ years architecting AI/ML systems, multi-agent platforms, and cloud-native solutions.
+        22+years architecting AI/ML systems, multi-agent platforms, and cloud-native solutions.
         Leading teams, driving innovation, and delivering measurable ROI across healthcare, government, and enterprise sectors.
       </p>
       <div className={styles.ctaButtons}>
