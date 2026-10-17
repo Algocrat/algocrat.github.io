@@ -1,9 +1,16 @@
+export interface ProjectLink {
+  label: string;
+  url: string;
+}
+
 export interface Project {
   id: string;
   title: string;
+  context: string;
   tags: string[];
   description: string;
-  metrics: Metric[];
+  highlights: string[];
+  links: ProjectLink[];
 }
 
 export interface Metric {
@@ -18,6 +25,7 @@ export interface Experience {
   startDate: string;
   endDate: string;
   description: string;
+  highlights?: string[];
 }
 
 export interface Certification {

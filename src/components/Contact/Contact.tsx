@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Globe, Linkedin, FileText } from 'lucide-react';
+import { Mail, Phone, MapPin, Globe, Linkedin, Github, FileText } from 'lucide-react';
 import styles from './Contact.module.css';
 
 const Contact = () => {
@@ -41,6 +41,16 @@ const Contact = () => {
             </a>
           </div>
           
+          <div className={styles.contactCard}>
+            <div className={styles.contactIcon}>
+              <Github size={32} />
+            </div>
+            <h3>GitHub</h3>
+            <a href="https://github.com/tejas4patel" target="_blank" rel="noopener noreferrer">
+              github.com/tejas4patel
+            </a>
+          </div>
+
           <div className={styles.contactCard}>
             <div className={styles.contactIcon}>
               <Globe size={32} />

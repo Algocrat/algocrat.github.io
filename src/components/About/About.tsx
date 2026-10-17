@@ -1,14 +1,12 @@
 import { StatCard } from '@/types/index';
 import styles from './About.module.css';
 
-
 const stats: StatCard[] = [
-  { value: '22+', label: 'Years Experience' },
-  { value: '15+', label: 'Major Initiatives Delivered' },
-  { value: '5', label: 'Professional Certifications' },
-  { value: '$2M+', label: 'Annual Business Impact' }
+  { value: '23', label: 'Years Experience' },
+  { value: '3', label: 'Independent AI Products' },
+  { value: '3', label: 'Active Certifications' },
+  { value: 'Atlanta', label: 'Based In' }
 ];
-
 
 const About = () => {
   return (
@@ -18,19 +16,15 @@ const About = () => {
         <div className={styles.aboutContent}>
           <div className={styles.aboutText}>
             <p>
-              AI Technology Leader with deep expertise in cloud-native architectures, data 
-              engineering, and applied machine learning. Proven ability to architect and deliver 
-              scalable AI-driven systems that integrate multi-agent frameworks, retrieval-augmented 
-              pipelines, and enterprise data platforms. Expert in designing small language model 
-              (SLM) architectures, implementing LoRA/QLoRA fine-tuning techniques, and orchestrating 
-              complex AI workflows using LangChain, LangGraph, MetaGPT, and CrewAI.
+              Hands-on AI architect and engineer with 23 years of experience. I design and build
+              agentic AI applications myself, mostly in Python, R and TypeScript. At CDC I built a
+              Playwright crawler that tests a STARLIMS lab system with no hand-written scripts.
             </p>
             <p>
-              Experienced in leading innovation through event-driven design, real-time analytics, 
-              and intelligent automation. Architected healthcare AI pipelines saving $2M+ annually, 
-              reduced clinical query turnaround by 70%, and increased model inference throughput by 
-              45% through GPU optimization. Skilled at bridging experimental AI research with 
-              production-ready solutions, aligning advanced technologies with business strategy.
+              On my own time, under Algocrat Labs, I build AI products including a federal procurement
+              intelligence platform, Dragon Farm (an R package for SLM fine-tuning) and a D3 data
+              storytelling pipeline. Strong background in data architecture, HL7 healthcare data and
+              federal health IT. I lead the automation team at CDC and build alongside them.
             </p>
           </div>
           <div className={styles.stats}>
@@ -44,25 +38,23 @@ const About = () => {
         </div>
         <div className={styles.thoughtLeadership}>
           <p>
-            Active thought leader through my blog{' '}
+            I write about applied AI on my blog{' '}
             <strong>
-              <a 
-                href="https://www.intenseanalytics.com" 
-                target="_blank" 
+              <a
+                href="https://www.intenseanalytics.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className={styles.blogLink}
               >
                 Intense Analytics
               </a>
-            </strong>, 
-            conference speaking, and technical community initiatives, bridging cutting-edge AI research 
-            with practical enterprise applications while championing responsible AI governance frameworks.
+            </strong>{' '}
+            and demo agentic automation work at the Booz Allen Atlanta AI Community of Practice.
           </p>
         </div>
       </div>
     </section>
   );
 };
-
 
 export default About;

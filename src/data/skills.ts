@@ -2,44 +2,63 @@ import { SkillCategory } from '@/types/index';
 
 export const skillCategories: SkillCategory[] = [
   {
-    id: 'ai-ml',
-    title: 'AI & Machine Learning',
+    id: 'agentic',
+    title: 'Agentic & GenAI',
     skills: [
-      'TensorFlow, PyTorch',
       'LangChain, LangGraph',
-      'MetaGPT, CrewAI, AutoGen',
-      'RAG, LoRA/QLoRA',
-      'Hugging Face, Ollama'
+      'Microsoft Agent Framework, Copilot Studio',
+      'Claude, Azure OpenAI, AWS Bedrock',
+      'RAG, GraphRAG, Ollama'
+    ]
+  },
+  {
+    id: 'ml',
+    title: 'ML & Fine-Tuning',
+    skills: [
+      'PyTorch, TensorFlow, Hugging Face',
+      'LoRA / QLoRA, SLMs, ESM-2',
+      'Model monitoring, drift detection',
+      'Bias mitigation'
+    ]
+  },
+  {
+    id: 'testing',
+    title: 'Test Automation',
+    skills: [
+      'Playwright, agentic crawlers',
+      'Page Object Model',
+      'GitHub Actions, CI/CD',
+      'Grafana'
     ]
   },
   {
     id: 'cloud',
-    title: 'Cloud Platforms',
+    title: 'Cloud',
     skills: [
-      'AWS SageMaker, Bedrock',
+      'AWS SageMaker, Bedrock, Lambda',
+      'AWS Batch, ECS, DynamoDB',
       'Azure OpenAI, Synapse',
-      'Lambda, ECS, AKS',
-      'DynamoDB, Event Hubs'
+      'Azure AKS, Event Hubs'
     ]
   },
   {
     id: 'data',
-    title: 'Data & Analytics',
+    title: 'Data',
     skills: [
-      'PostgreSQL, MongoDB',
-      'Spark, Databricks, Kafka',
-      'Elasticsearch, Neo4j',
-      'React, D3.js, Tableau'
+      'PostgreSQL, SQL Server, MongoDB',
+      'Databricks, Spark, Kafka',
+      'Elasticsearch, Neo4j, Redis',
+      'DuckDB, HL7'
     ]
   },
   {
-    id: 'programming',
-    title: 'Programming',
+    id: 'languages',
+    title: 'Languages & Viz',
     skills: [
-      'Python, Java, Scala',
-      'TypeScript, C',
-      'PySpark, Apache Beam',
-      'FastAPI, .NET Core'
+      'Python, R, TypeScript',
+      'Java, Scala, C#',
+      'D3.js, React, Angular',
+      'Tableau, Power BI, Plotly'
     ]
   }
 ];

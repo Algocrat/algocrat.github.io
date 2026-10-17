@@ -1,3 +1,4 @@
+import { ExternalLink } from 'lucide-react';
 import { Project } from '@/types/index';
 import styles from './Projects.module.css';
 
@@ -9,7 +10,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className={styles.projectCard}>
       <div className={styles.projectHeader}>
-        <h3>{project.title}</h3>
+        <div>
+          <span className={styles.projectContext}>{project.context}</span>
+          <h3>{project.title}</h3>
+        </div>
         <div className={styles.tags}>
           {project.tags.map((tag) => (
             <span key={tag} className={styles.projectTag}>
@@ -20,14 +24,22 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       </div>
       <div className={styles.projectBody}>
         <p>{project.description}</p>
-        <div className={styles.projectMetrics}>
-          {project.metrics.map((metric, index) => (
-            <div key={index} className={styles.metric}>
-              <span className={styles.metricValue}>{metric.value}</span>
-              <span className={styles.metricLabel}>{metric.label}</span>
-            </div>
-          ))}
-        </div>
+        {project.highlights.length > 0 && (
+          <ul className={styles.highlights}>
+            {project.highlights.map((h, i) => (
+              <li key={i}>{h}</li>
+            ))}
+          </ul>
+        )}
+        {project.links.length > 0 && (
+          <div className={styles.projectLinks}>
+            {project.links.map((link) => (
+              <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                {link.label} <ExternalLink size={14} />
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

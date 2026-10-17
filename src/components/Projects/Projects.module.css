@@ -10,7 +10,7 @@
 
 .container h2 {
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   text-align: center;
   /* Fixed: Lighter text for dark background */
   color: #ffffff;
@@ -43,7 +43,7 @@
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   color: var(--white);
   padding: 2rem;
-  height: 160px;
+  min-height: 190px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -84,7 +84,6 @@
   margin-bottom: 1rem;
   color: var(--text-light);
   line-height: 1.8;
-  flex: 1;
 }
 
 .projectMetrics {
@@ -122,4 +121,59 @@
     height: auto;
     min-height: 160px;
   }
+}
+
+.intro {
+  text-align: center;
+  color: #cbd5e1;
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.projectContext {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 0.4rem;
+}
+
+.highlights {
+  list-style: disc;
+  margin: 0 0 1.25rem 1.1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.highlights li {
+  margin-bottom: 0.5rem;
+}
+
+.projectLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.projectLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition);
+}
+
+.projectLink:hover {
+  background: var(--secondary-color);
+  color: var(--white);
 }

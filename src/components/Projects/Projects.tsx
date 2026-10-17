@@ -7,6 +7,10 @@ const Projects = () => {
     <section id="projects" className={styles.projectsSection}>
       <div className={styles.container}>
         <h2>Featured Projects</h2>
+        <p className={styles.intro}>
+          Independent projects are side projects I build on my own time under the Algocrat Labs name,
+          separate from my Booz Allen work.
+        </p>
         <div className={styles.projectsGrid}>
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />

@@ -8,8 +8,7 @@ const Certifications = () => {
       <div className={styles.container}>
         <h2>Professional Certifications</h2>
         <p className={styles.intro}>
-          Industry-recognized certifications demonstrating expertise in AI/ML, cloud architecture, 
-          and project management across AWS, Azure, and professional leadership domains.
+          Active certifications in machine learning, cloud architecture and project management.
         </p>
         
         <div className={styles.certGrid}>
@@ -46,15 +45,15 @@ const Certifications = () => {
           <div className={styles.highlightCard}>
             <h3>Professional Leadership</h3>
             <p>
-              PMP certification validates leadership in managing complex AI/ML initiatives, 
-              scaling teams from 5 to 25 members, and delivering $2M+ annual business impact.
+              PMP certification backs up hands-on technical leadership: setting direction for an
+              automation team at CDC and owning delivery to the client.
             </p>
           </div>
           <div className={styles.highlightCard}>
             <h3>Continuous Learning</h3>
             <p>
-              Commitment to staying current with evolving AI/ML technologies through ongoing 
-              certification renewals and hands-on implementation of cutting-edge frameworks.
+              I keep certifications current and test new tools hands-on in my independent projects
+              before bringing them to client work.
             </p>
           </div>
         </div>

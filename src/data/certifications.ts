@@ -9,7 +9,7 @@ export const certifications: Certification[] = [
   },
   {
     id: 'aws-sa',
-    title: 'AWS Certified Solutions Architect',
+    title: 'AWS Certified Solutions Architect - Associate',
     issueDate: 'Mar 2025',
     expiryDate: 'Mar 2028'
   },
@@ -18,15 +18,5 @@ export const certifications: Certification[] = [
     title: 'Project Management Professional (PMP)',
     issueDate: 'Sep 2024',
     expiryDate: 'Sep 2027'
-  },
-  {
-    id: 'azure-ds',
-    title: 'Azure Data Scientist Associate',
-    issueDate: 'Mar 2022'
-  },
-  {
-    id: 'msft-silverlight',
-    title: 'Microsoft Certified Professional - Silverlight Developer ',
-    issueDate: 'Feb 2011'
   }
 ];
