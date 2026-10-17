@@ -11,6 +11,7 @@ export interface Project {
   description: string;
   highlights: string[];
   links: ProjectLink[];
+  metrics?: Metric[];
 }
 
 export interface Metric {

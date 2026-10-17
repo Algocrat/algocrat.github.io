@@ -31,6 +31,16 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             ))}
           </ul>
         )}
+        {project.metrics && project.metrics.length > 0 && (
+          <div className={styles.projectMetrics}>
+            {project.metrics.map((metric, index) => (
+              <div key={index} className={styles.metric}>
+                <span className={styles.metricValue}>{metric.value}</span>
+                <span className={styles.metricLabel}>{metric.label}</span>
+              </div>
+            ))}
+          </div>
+        )}
         {project.links.length > 0 && (
           <div className={styles.projectLinks}>
             {project.links.map((link) => (

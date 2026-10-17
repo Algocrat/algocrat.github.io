@@ -52,5 +52,31 @@ export const projects: Project[] = [
       'Moved the team from writing tests by hand to agentic testing, one piece at a time. Now extending it so tests can be written straight from specs using Microsoft Agent Framework.'
     ],
     links: []
+  },
+  {
+    id: 'mimic-qa',
+    title: 'MIMIC-IV Clinical Q&A System',
+    context: 'Booz Allen Hamilton',
+    tags: ['Healthcare AI', 'LLM', 'FastAPI'],
+    description: 'Built a natural language question-answering system over the MIMIC-IV clinical database using FastAPI, PostgreSQL, and large language models. Enables clinicians to query complex medical data using plain English.',
+    highlights: [],
+    links: [],
+    metrics: [
+      { value: '70%', label: 'Faster Queries' },
+      { value: '$2M', label: 'Annual Savings' }
+    ]
+  },
+  {
+    id: 'healthcare-pipelines',
+    title: 'Real-Time Health Data Pipelines',
+    context: 'Booz Allen Hamilton',
+    tags: ['Event-Driven', 'HL7', 'Clinical Data'],
+    description: 'Built event-driven data pipelines for HL7 messages and mortality data enabling clinical decision support. Applied CQRS/Event Sourcing patterns to survey workflows for real-time analytics.',
+    highlights: [],
+    links: [],
+    metrics: [
+      { value: 'Real-time', label: 'Data Processing' },
+      { value: 'HIPAA', label: 'Compliant' }
+    ]
   }
 ];
