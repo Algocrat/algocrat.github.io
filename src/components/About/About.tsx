@@ -3,7 +3,7 @@ import styles from './About.module.css';
 
 const stats: StatCard[] = [
   { value: '23', label: 'Years Experience' },
-  { value: '4', label: 'Live AI Products Shipped' },
+  { value: '6', label: 'Live AI Products Shipped' },
   { value: '3', label: 'Active Certifications' },
   { value: '12', label: 'Years at Booz Allen' }
 ];
