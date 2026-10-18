@@ -3,7 +3,7 @@ import styles from './About.module.css';
 
 const stats: StatCard[] = [
   { value: '23', label: 'Years Experience' },
-  { value: '3', label: 'Independent AI Products' },
+  { value: '4', label: 'Live AI Products Shipped' },
   { value: '3', label: 'Active Certifications' },
   { value: 'Atlanta', label: 'Based In' }
 ];
