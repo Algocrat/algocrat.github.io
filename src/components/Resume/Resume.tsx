@@ -59,8 +59,7 @@ const Resume = () => {
           <div className={styles.jobHeader}>
             <div><h3>Dragon Farm: Drag-and-Drop SLM Fine-Tuning for R</h3></div>
             <div className={styles.date}>
-              <a href="https://dragonfarm.dev/" target="_blank" rel="noopener noreferrer">dragonfarm.dev</a>{' • '}
-              <a href="https://github.com/tejas4patel/dragon-farm" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://dragonfarm.dev/" target="_blank" rel="noopener noreferrer">dragonfarm.dev</a>
             </div>
           </div>
           <ul>

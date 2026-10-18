@@ -22,10 +22,7 @@ export const projects: Project[] = [
     highlights: [
       'Gives R analysts and statisticians a way to customize models without learning Python or MLOps.'
     ],
-    links: [
-      { label: 'dragonfarm.dev', url: 'https://dragonfarm.dev/' },
-      { label: 'GitHub', url: 'https://github.com/tejas4patel/dragon-farm' }
-    ]
+    links: [{ label: 'dragonfarm.dev', url: 'https://dragonfarm.dev/' }]
   },
   {
     id: 'deviz-informance',
